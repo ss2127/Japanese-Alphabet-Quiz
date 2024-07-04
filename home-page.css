@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffb7c5;
+}
+
+p {
+    margin-bottom: 80px;
+
+}
+.button-styling {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#hiragana-button {
+    font-size: 1.5rem;
+    padding: 20px 70px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(93, 245, 126);
+    cursor: pointer;
+}
+
+#hiragana-button:active {
+    background-color: rgb(68, 226, 102);
+}
+
+#katakana-button {
+    font-size: 1.5rem;
+    padding: 20px 69px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(93, 245, 215);
+    cursor: pointer;
+}
+
+#katakana-button:active {
+    background-color: rgb(73, 224, 194);
+}
+
+#hiragana-quiz-button {
+    font-size: 1.5rem;
+    padding: 20px 43px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(58, 213, 92);
+    cursor: pointer;
+}
+#hiragana-quiz-button:active{
+    background-color: rgb(46, 186, 76);
+}
+#katakana-quiz-button {
+    font-size: 1.5rem;
+    padding: 20px 43px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(31, 220, 182);
+    cursor: pointer;
+}
+
+#katakana-quiz-button:active {
+    background-color: rgb(23, 196, 162);
+}

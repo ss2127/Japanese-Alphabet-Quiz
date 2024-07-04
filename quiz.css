@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, sans-serif;
+    height: 1580px;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    color: #ffb7c5;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    
+}
+
+fieldset{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: rgb(125, 203, 234);
+}
+
+#submit-button {
+    padding: 8px 5px;
+    background-color: greenyellow;
+    border-radius: 8px;
+    border: 1px solid black;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+#submit-button:active {
+    background-color: rgb(146, 221, 35);
+}
+
+#refreshButton {
+    font-size: 1.4rem;
+    vertical-align: bottom;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 2px 6px;
+    padding-left: 9px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#refreshButton:active {
+    background-color: rgb(184, 184, 184);
+}
+
+#scrollToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #ffc800; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 14px 22px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#scrollToTopBtn:active{
+    background-color: #d6a800;
+}
+
+#arrow-size{
+    font-size: 1.2rem;
+}
+
+#feedback-message {
+    margin-top: 2px;
+}
