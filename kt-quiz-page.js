@@ -470,7 +470,7 @@ function japaneseToEnglish () {
                 alphabetRow9[i] = 're'
                 break;
             case 'ロ':
-                alphabetRow2[i] = 'ro'
+                alphabetRow9[i] = 'ro'
                 break;
         }
     }
