@@ -230,6 +230,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('first-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ1 = document.getElementById('correct-answer-display-q1');
+        correctAnswerQ1.innerHTML = `Correct Answer: ${alphabetRow1[randomIntQ1]}`;
     }
 
     if (answerQ2 === `${alphabetRow2[randomIntQ2]}`){
@@ -238,6 +240,9 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('second-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ2 = document.getElementById('correct-answer-display-q2');
+        correctAnswerQ2.innerHTML = `Correct Answer: ${alphabetRow2[randomIntQ2]}`;
+        
     }
 
     if (answerQ3 === `${alphabetRow3[randomIntQ3]}`){
@@ -246,6 +251,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('third-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ3 = document.getElementById('correct-answer-display-q3');
+        correctAnswerQ3.innerHTML = `Correct Answer: ${alphabetRow3[randomIntQ3]}`;
     }
 
     if (answerQ4 === `${alphabetRow4[randomIntq4]}`){
@@ -254,6 +261,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('fourth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ4 = document.getElementById('correct-answer-display-q4');
+        correctAnswerQ4.innerHTML = `Correct Answer: ${alphabetRow4[randomIntq4]}`;
     }
 
     if (answerQ5 === `${alphabetRow5[randomIntq5]}`){
@@ -262,6 +271,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('fifth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ5 = document.getElementById('correct-answer-display-q5');
+        correctAnswerQ5.innerHTML = `Correct Answer: ${alphabetRow5[randomIntq5]}`;
     }
   
     if (answerQ6 === `${alphabetRow6[randomIntQ6]}`){
@@ -270,6 +281,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('sixth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ6 = document.getElementById('correct-answer-display-q6');
+        correctAnswerQ6.innerHTML = `Correct Answer: ${alphabetRow6[randomIntQ6]}`;
     }
 
     if (answerQ7 === `${alphabetRow7[randomIntQ7]}`){
@@ -278,6 +291,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('seventh-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ7 = document.getElementById('correct-answer-display-q7');
+        correctAnswerQ7.innerHTML = `Correct Answer: ${alphabetRow7[randomIntQ7]}`;
     }
 
     if (answerQ8 === `${alphabetRow8[randomIntQ8]}`){
@@ -286,6 +301,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('eighth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ8 = document.getElementById('correct-answer-display-q8');
+        correctAnswerQ8.innerHTML = `Correct Answer: ${alphabetRow8[randomIntQ8]}`;
     }
 
     if (answerQ9 === `${alphabetRow9[randomIntQ9]}`){
@@ -294,6 +311,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('ninth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ9 = document.getElementById('correct-answer-display-q9');
+        correctAnswerQ9.innerHTML = `Correct Answer: ${alphabetRow9[randomIntQ9]}`;
     }
 
     if (answerQ10 === `${alphabetRow10[randomIntQ10]}`){
@@ -302,6 +321,8 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
     else{
         document.getElementById('tenth-result').style.backgroundColor = 'rgba(255,0 , 0, 0.2)'
+        const correctAnswerQ10 = document.getElementById('correct-answer-display-q10');
+        correctAnswerQ10.innerHTML = `Correct Answer: ${alphabetRow10[randomIntQ10]}`;
     }
 
     const feedbackMessage = document.getElementById('feedback-message');
