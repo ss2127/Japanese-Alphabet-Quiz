@@ -6,7 +6,7 @@ const getRandomInt = (min=0, max=4) => {
 };
 
 
-// shuffle function
+// shuffle array function
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -22,17 +22,21 @@ document.getElementById('first-question').innerHTML = alphabetRow1[randomIntQ1];
 const letterRow1 = ['a', 'i', 'u', 'e', 'o'];
 const shuffledLetterRow1 = shuffleArray(letterRow1);
 
-document.getElementById('first-q1').innerHTML = shuffledLetterRow1[0];
-document.getElementById('second-q1').innerHTML = shuffledLetterRow1[1];
-document.getElementById('third-q1').innerHTML = shuffledLetterRow1[2];
-document.getElementById('fourth-q1').innerHTML = shuffledLetterRow1[3];
-document.getElementById('fifth-q1').innerHTML = shuffledLetterRow1[4];
 
-document.getElementById('1st-q1').value = shuffledLetterRow1[0]
-document.getElementById('2nd-q1').value = shuffledLetterRow1[1]
-document.getElementById('3rd-q1').value = shuffledLetterRow1[2]
-document.getElementById('4th-q1').value = shuffledLetterRow1[3]
-document.getElementById('5th-q1').value = shuffledLetterRow1[4]
+const firstQuestionList = document.querySelectorAll('.first');
+
+// use forEach to assign value to each radios in each question
+shuffledLetterRow1.forEach((element, index) => {
+    firstQuestionList[index].innerHTML = element;
+});
+
+// use forEach to assign the values to the radio input
+const firstQuestionInputValues = document.querySelectorAll('.first-value');
+
+shuffledLetterRow1.forEach((element, index) => {
+    firstQuestionInputValues[index].value = element;
+});
+
 
 ///////////////////////////////// 2ND ROW ////////////////////////////////////
 const alphabetRow2 = ['か', 'き', 'く', 'け', 'こ'];
@@ -42,17 +46,16 @@ document.getElementById('second-question').innerHTML = alphabetRow2[randomIntQ2]
 const letterRow2 = ['ka', 'ki', 'ku', 'ke', 'ko'];
 const shuffledLetterRow2 = shuffleArray(letterRow2);
 
-document.getElementById('first-q2').innerHTML = shuffledLetterRow2[0];
-document.getElementById('second-q2').innerHTML = shuffledLetterRow2[1];
-document.getElementById('third-q2').innerHTML = shuffledLetterRow2[2];
-document.getElementById('fourth-q2').innerHTML = shuffledLetterRow2[3];
-document.getElementById('fifth-q2').innerHTML = shuffledLetterRow2[4];
+const secondQuestionLists = document.querySelectorAll('.second');
+shuffledLetterRow2.forEach((element, index) => {
+    secondQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q2').value = shuffledLetterRow2[0]
-document.getElementById('2nd-q2').value = shuffledLetterRow2[1]
-document.getElementById('3rd-q2').value = shuffledLetterRow2[2]
-document.getElementById('4th-q2').value = shuffledLetterRow2[3]
-document.getElementById('5th-q2').value = shuffledLetterRow2[4]
+const secondQuestionInputValues = document.querySelectorAll('.second-value');
+shuffledLetterRow2.forEach((element, index) => {
+    secondQuestionInputValues[index].value = element;
+});
+
 
 ///////////////////////////////// 3RD ROW ////////////////////////////////////
 const alphabetRow3 = ['さ', 'し', 'す', 'せ', 'そ'];
@@ -62,17 +65,15 @@ document.getElementById('third-question').innerHTML = alphabetRow3[randomIntQ3];
 const letterRow3 = ['sa', 'shi', 'su', 'se', 'so'];
 const shuffledLetterRow3 = shuffleArray(letterRow3);
 
-document.getElementById('first-q3').innerHTML = shuffledLetterRow3[0];
-document.getElementById('second-q3').innerHTML = shuffledLetterRow3[1];
-document.getElementById('third-q3').innerHTML = shuffledLetterRow3[2];
-document.getElementById('fourth-q3').innerHTML = shuffledLetterRow3[3];
-document.getElementById('fifth-q3').innerHTML = shuffledLetterRow3[4];
+const thirdQuestionLists = document.querySelectorAll('.third');
+shuffledLetterRow3.forEach((element, index) => {
+    thirdQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q3').value = shuffledLetterRow3[0]
-document.getElementById('2nd-q3').value = shuffledLetterRow3[1]
-document.getElementById('3rd-q3').value = shuffledLetterRow3[2]
-document.getElementById('4th-q3').value = shuffledLetterRow3[3]
-document.getElementById('5th-q3').value = shuffledLetterRow3[4]
+const thirdQuestionInputValues = document.querySelectorAll('.third-value');
+shuffledLetterRow3.forEach((element, index) => {
+    thirdQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 4th ROW ////////////////////////////////////
 
@@ -83,17 +84,15 @@ document.getElementById('fourth-question').innerHTML = alphabetRow4[randomIntq4]
 const letterRow4 = ['ta', 'chi', 'tsu', 'te', 'to'];
 const shuffledLetterRow4 = shuffleArray(letterRow4);
 
-document.getElementById('first-q4').innerHTML = shuffledLetterRow4[0];
-document.getElementById('second-q4').innerHTML = shuffledLetterRow4[1];
-document.getElementById('third-q4').innerHTML = shuffledLetterRow4[2];
-document.getElementById('fourth-q4').innerHTML = shuffledLetterRow4[3];
-document.getElementById('fifth-q4').innerHTML = shuffledLetterRow4[4];
+const fourthQuestionLists = document.querySelectorAll('.fourth');
+shuffledLetterRow4.forEach((element, index) => {
+    fourthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q4').value = shuffledLetterRow4[0]
-document.getElementById('2nd-q4').value = shuffledLetterRow4[1]
-document.getElementById('3rd-q4').value = shuffledLetterRow4[2]
-document.getElementById('4th-q4').value = shuffledLetterRow4[3]
-document.getElementById('5th-q4').value = shuffledLetterRow4[4]
+const fourthQuestionInputValues = document.querySelectorAll('.fourth-value');
+shuffledLetterRow4.forEach((element, index) => {
+    fourthQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 5TH ROW ////////////////////////////////////
 
@@ -104,17 +103,15 @@ document.getElementById('fifth-question').innerHTML = alphabetRow5[randomIntq5];
 const letterRow5 = ['na', 'ni', 'nu', 'ne', 'no'];
 const shuffledLetterRow5 = shuffleArray(letterRow5);
 
-document.getElementById('first-q5').innerHTML = shuffledLetterRow5[0];
-document.getElementById('second-q5').innerHTML = shuffledLetterRow5[1];
-document.getElementById('third-q5').innerHTML = shuffledLetterRow5[2];
-document.getElementById('fourth-q5').innerHTML = shuffledLetterRow5[3];
-document.getElementById('fifth-q5').innerHTML = shuffledLetterRow5[4];
+const fifthQuestionLists = document.querySelectorAll('.fifth');
+shuffledLetterRow5.forEach((element, index) => {
+    fifthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q5').value = shuffledLetterRow5[0]
-document.getElementById('2nd-q5').value = shuffledLetterRow5[1]
-document.getElementById('3rd-q5').value = shuffledLetterRow5[2]
-document.getElementById('4th-q5').value = shuffledLetterRow5[3]
-document.getElementById('5th-q5').value = shuffledLetterRow5[4]
+const fifthQuestionInputValues = document.querySelectorAll('.fifth-value');
+shuffledLetterRow5.forEach((element, index) => {
+    fifthQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 6TH ROW ////////////////////////////////////
 const alphabetRow6 = ['は', 'ひ', 'ふ', 'へ', 'ほ'];
@@ -124,17 +121,15 @@ document.getElementById('sixth-question').innerHTML = alphabetRow6[randomIntQ6];
 const letterRow6 = ['ha', 'hi', 'fu', 'he', 'ho'];
 const shuffledLetterRow6 = shuffleArray(letterRow6);
 
-document.getElementById('first-q6').innerHTML = shuffledLetterRow6[0];
-document.getElementById('second-q6').innerHTML = shuffledLetterRow6[1];
-document.getElementById('third-q6').innerHTML = shuffledLetterRow6[2];
-document.getElementById('fourth-q6').innerHTML = shuffledLetterRow6[3];
-document.getElementById('fifth-q6').innerHTML = shuffledLetterRow6[4];
+const sixthQuestionLists = document.querySelectorAll('.sixth');
+shuffledLetterRow6.forEach((element, index) => {
+    sixthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q6').value = shuffledLetterRow6[0]
-document.getElementById('2nd-q6').value = shuffledLetterRow6[1]
-document.getElementById('3rd-q6').value = shuffledLetterRow6[2]
-document.getElementById('4th-q6').value = shuffledLetterRow6[3]
-document.getElementById('5th-q6').value = shuffledLetterRow6[4]
+const sixthQuestionInputValues = document.querySelectorAll('.sixth-value');
+shuffledLetterRow6.forEach((element, index) => {
+    sixthQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 7TH ROW ////////////////////////////////////
 const alphabetRow7 = ['ま', 'み', 'む', 'め', 'も'];
@@ -144,17 +139,15 @@ document.getElementById('seventh-question').innerHTML = alphabetRow7[randomIntQ7
 const letterRow7 = ['ma', 'mi', 'mu', 'me', 'mo'];
 const shuffledLetterRow7 = shuffleArray(letterRow7);
 
-document.getElementById('first-q7').innerHTML = shuffledLetterRow7[0];
-document.getElementById('second-q7').innerHTML = shuffledLetterRow7[1];
-document.getElementById('third-q7').innerHTML = shuffledLetterRow7[2];
-document.getElementById('fourth-q7').innerHTML = shuffledLetterRow7[3];
-document.getElementById('fifth-q7').innerHTML = shuffledLetterRow7[4];
+const seventhQuestionLists = document.querySelectorAll('.seventh');
+shuffledLetterRow7.forEach((element, index) => {
+    seventhQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q7').value = shuffledLetterRow7[0]
-document.getElementById('2nd-q7').value = shuffledLetterRow7[1]
-document.getElementById('3rd-q7').value = shuffledLetterRow7[2]
-document.getElementById('4th-q7').value = shuffledLetterRow7[3]
-document.getElementById('5th-q7').value = shuffledLetterRow7[4]
+const seventhQuestionInputValues = document.querySelectorAll('.seventh-value');
+shuffledLetterRow7.forEach((element, index) => {
+    seventhQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 8TH ROW ////////////////////////////////////
 const alphabetRow8 = ['や', 'ゆ', 'よ'];
@@ -164,13 +157,15 @@ document.getElementById('eighth-question').innerHTML = alphabetRow8[randomIntQ8]
 const letterRow8 = ['ya', 'yu', 'yo'];
 const shuffledLetterRow8 = shuffleArray(letterRow8);
 
-document.getElementById('first-q8').innerHTML = shuffledLetterRow8[0];
-document.getElementById('second-q8').innerHTML = shuffledLetterRow8[1];
-document.getElementById('third-q8').innerHTML = shuffledLetterRow8[2];
+const eighthQuestionLists = document.querySelectorAll('.eighth');
+shuffledLetterRow8.forEach((element, index) => {
+    eighthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q8').value = shuffledLetterRow8[0]
-document.getElementById('2nd-q8').value = shuffledLetterRow8[1]
-document.getElementById('3rd-q8').value = shuffledLetterRow8[2]
+const eighthQuestionInputValues = document.querySelectorAll('.eighth-value');
+shuffledLetterRow8.forEach((element, index) => {
+    eighthQuestionInputValues[index].value = element;
+});
 
 
 
@@ -182,17 +177,15 @@ document.getElementById('ninth-question').innerHTML = alphabetRow9[randomIntQ9];
 const letterRow9 = ['ra', 'ri', 'ru', 're', 'ro'];
 const shuffledLetterRow9 = shuffleArray(letterRow9);
 
-document.getElementById('first-q9').innerHTML = shuffledLetterRow9[0];
-document.getElementById('second-q9').innerHTML = shuffledLetterRow9[1];
-document.getElementById('third-q9').innerHTML = shuffledLetterRow9[2];
-document.getElementById('fourth-q9').innerHTML = shuffledLetterRow9[3];
-document.getElementById('fifth-q9').innerHTML = shuffledLetterRow9[4];
+const ninthQuestionLists = document.querySelectorAll('.ninth');
+shuffledLetterRow9.forEach((element, index) => {
+    ninthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q9').value = shuffledLetterRow9[0]
-document.getElementById('2nd-q9').value = shuffledLetterRow9[1]
-document.getElementById('3rd-q9').value = shuffledLetterRow9[2]
-document.getElementById('4th-q9').value = shuffledLetterRow9[3]
-document.getElementById('5th-q9').value = shuffledLetterRow9[4]
+const ninthQuestionInputValues = document.querySelectorAll('.ninth-value');
+shuffledLetterRow9.forEach((element, index) => {
+    ninthQuestionInputValues[index].value = element;
+});
 
 ///////////////////////////////// 10TH ROW ////////////////////////////////////
 const alphabetRow10 = ['わ', 'を', 'ん'];
@@ -202,26 +195,30 @@ document.getElementById('tenth-question').innerHTML = alphabetRow10[randomIntQ10
 const letterRow10 = ['wa', 'wo', 'n'];
 const shuffledLetterRow10 = shuffleArray(letterRow10);
 
-document.getElementById('first-q10').innerHTML = shuffledLetterRow10[0];
-document.getElementById('second-q10').innerHTML = shuffledLetterRow10[1];
-document.getElementById('third-q10').innerHTML = shuffledLetterRow10[2];
+const tenthQuestionLists = document.querySelectorAll('.tenth');
+shuffledLetterRow10.forEach((element, index) => {
+    tenthQuestionLists[index].innerHTML = element;
+});
 
-document.getElementById('1st-q10').value = shuffledLetterRow10[0]
-document.getElementById('2nd-q10').value = shuffledLetterRow10[1]
-document.getElementById('3rd-q10').value = shuffledLetterRow10[2]
+const tenthQuestionInputValues = document.querySelectorAll('.tenth-value');
+shuffledLetterRow10.forEach((element, index) => {
+    tenthQuestionInputValues[index].value = element;
+});
 
 
 japaneseToEnglish();
-// function to get corresponding matches
 
 document.getElementById('submit-form').addEventListener('submit', (event) => {
     event.preventDefault();
     
-    let sum = 0;
+    let countScore = 0;
     
     const formData = new FormData(event.target);
     
-
+    /* 
+     get the value from each radio button the user selected as
+     from their answer in each question.
+     */
     const answerQ1 = formData.get('q1');
     const answerQ2 = formData.get('q2');
     const answerQ3 = formData.get('q3');
@@ -234,7 +231,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     const answerQ10 = formData.get('q10');
 
     if (answerQ1 === `${alphabetRow1[randomIntQ1]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('first-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -242,7 +239,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ2 === `${alphabetRow2[randomIntQ2]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('second-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -250,7 +247,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ3 === `${alphabetRow3[randomIntQ3]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('third-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -258,7 +255,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ4 === `${alphabetRow4[randomIntq4]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('fourth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -266,7 +263,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ5 === `${alphabetRow5[randomIntq5]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('fifth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -274,7 +271,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
   
     if (answerQ6 === `${alphabetRow6[randomIntQ6]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('sixth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -282,7 +279,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ7 === `${alphabetRow7[randomIntQ7]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('seventh-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -290,7 +287,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ8 === `${alphabetRow8[randomIntQ8]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('eighth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -298,7 +295,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ9 === `${alphabetRow9[randomIntQ9]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('ninth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -306,7 +303,7 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     if (answerQ10 === `${alphabetRow10[randomIntQ10]}`){
-        sum += 1;
+        countScore += 1;
         document.getElementById('tenth-result').style.backgroundColor = 'rgba(0, 255, 0, 0.2)'
     }
     else{
@@ -314,15 +311,15 @@ document.getElementById('submit-form').addEventListener('submit', (event) => {
     }
 
     const feedbackMessage = document.getElementById('feedback-message');
-    const sumResultMsg = `You've got ${sum}/10 questions correct.`
-    if (sum === 10){
-        feedbackMessage.innerHTML = `${sumResultMsg} Congrats!.   You've aced it!! 😊🎉`
+    const scoreResultMessage = `You've got ${countScore}/10 questions correct.`
+    if (countScore === 10){
+        feedbackMessage.innerHTML = `${scoreResultMessage} Congrats!.   You've aced it!! 😊🎉`
     }
-    else if (sum > 4) {
-        feedbackMessage.innerHTML = `${sumResultMsg} Nice! You've passed it! 😊`
+    else if (countScore > 4) {
+        feedbackMessage.innerHTML = `${scoreResultMessage} Nice! You've passed it! 😊`
     }
     else {
-        feedbackMessage.innerHTML = `${sumResultMsg} Please study more... 🙁`
+        feedbackMessage.innerHTML = `${scoreResultMessage} Please study more... 🙁`
     }
 
     disableRadios();
@@ -472,7 +469,7 @@ function japaneseToEnglish () {
                 alphabetRow9[i] = 're'
                 break;
             case 'ろ':
-                alphabetRow9[i] = 'ro'
+                alphabetRow2[i] = 'ro'
                 break;
         }
     }
