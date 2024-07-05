@@ -21,6 +21,7 @@ fieldset{
 
 #submit-button {
     padding: 8px 5px;
+    margin-left: 4px;
     background-color: greenyellow;
     border-radius: 8px;
     border: 1px solid black;
@@ -71,4 +72,17 @@ fieldset{
 
 #feedback-message {
     margin-top: 2px;
+}
+
+#correct-answer-display-q1,
+#correct-answer-display-q2,
+#correct-answer-display-q3,
+#correct-answer-display-q4,
+#correct-answer-display-q5,
+#correct-answer-display-q6,
+#correct-answer-display-q7,
+#correct-answer-display-q8,
+#correct-answer-display-q9,
+#correct-answer-display-q10{
+    margin-left: 40%;
 }
